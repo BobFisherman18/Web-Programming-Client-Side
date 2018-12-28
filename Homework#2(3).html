@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<body>
+<head>
+<script type = "text/javascript">
+function sliderChange(val){
+	document.getElementById('sliderStatus').innerHTML = val;
+ 
+}
+function sliderChange2(val2){
+	document.getElementById('sliderStatus2').innerHTML = val2;
+ 
+}
+
+
+</script>
+</head>
+
+
+
+<h1><center>Contact Us</center></h1>
+
+<form action="/action_page.php">  
+  Name:
+  <input type="text" name="firstname" value = "">
+  
+  <br><br>
+  
+  <p>E-mail Address:
+   <input type = "email" name="email">
+   Phone:
+   <input type = "tel" name="teli">
+   </p>
+   
+  
+  <h5>WHAT TYPE OF PRODUCTS DO YOU SELL?:</h5>
+  <input type="radio" name = "productsSell" value ="physcProducts"> Phycical Products <br><br>
+  <input type="radio"  name = "productsSell" value="DigProducts" > Digital Products <br><br>
+  <input type="radio"  name = "productsSell" value ="servConsult"> Services Consulting <br>
+ 
+ <p><strong>Needed Services</strong><br>
+ <select name="services">
+  <option value="eCommerBus">eCommerce Business</option>
+  <option value="IntConnect">Reliable Internet Connection</option>
+  <option value="plumbServ">Plumbing Services</option>
+  <option value="therapy">Therapy</option>
+</select> 
+ 
+ <p><strong>Budget</strong><br><br>
+ $<span id ="sliderStatus">50000</span>
+ -
+ $<span id ="sliderStatus2">70000</span>
+ </p>
+ 
+ 
+ <input type = "range" min "0" max = "100000" value = "50000" step = "1000" onChange ="sliderChange(this.value)"
+ onChange ="sliderChange2(this.value)"/>
+<br /><br />
+
+ 
+  <p>Message</p>
+  <textarea name="message" rows="5" cols="40">Your Message here...</textarea>
+  <br><br>
+  
+<input type = "submit">
+<input type = "reset">
+  
+</form>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
