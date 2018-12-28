@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<script>
+function myFunction(){
+
+var temp = document.getElementById('para2').innerHTML;
+
+document.getElementById('para2').innerHTML = document.getElementById('para1').innerHTML;
+document.getElementById('para1').innerHTML = temp;
+
+}
+</script>
+<body>
+
+
+
+
+<h2>Paragraph 1</h2>
+<p id = "para1">Write a javascript that asks the user to input a number. The number is then passed into a function you write that contains a loop. The loop will loop the number you passed into the function and print out the word “ha” that many times. For instance, if I entered 3, the function would print out “ha ha ha”.</p>
+
+
+<h2>Paragraph 2</h2>
+<p id = "para2">Create an html file with a textfield that accept the number and a button call “Factorial”. When we click the button it calculates the factorial of that number.</p>
+
+
+<button type="button"
+onclick="myFunction()">Switch</button>
+
+</body>
+</html> 
